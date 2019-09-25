@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" targetNamespace="java:com.fss.upi.req"
+	xmlns:java="java:com.fss.upi.req">
+	<xs:element name="UPI">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="java:TxnId" />
+				<xs:element ref="java:MerchantID" />
+				<xs:element ref="java:SubMerchantID" />
+				<xs:element ref="java:TerminalID" />
+				<xs:element ref="java:TxnRefId" />
+				<xs:element ref="java:TimeStamp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Resp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="java:OrgTxnId" />
+				<xs:element ref="java:TxnId" />
+				<xs:element ref="java:OrgTxnRefId" />
+				<xs:element ref="java:ResCode" />
+				<xs:element ref="java:ResDesc" />
+				<xs:element ref="java:TimeStamp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="OrgTxnId" type="xs:string" />
+	<xs:element name="ResCode" type="xs:string" />
+	<xs:element name="ResDesc" type="xs:string" />
+	<xs:element name="TxnType" type="xs:string" />
+	<xs:element name="OrgTxnRefId" type="xs:string" />
+	<xs:element name="OrgTxnTimeStamp" type="xs:string" />
+	<xs:element name="Amount" type="xs:string" />
+	<xs:element name="PayerVirAddr" type="xs:string" />
+	<xs:element name="PayeeVirAddr" type="xs:string" />
+	<xs:element name="PayeeMobileNumber" type="xs:string" />
+	<xs:element name="PayerCode" type="xs:string" />
+	<xs:element name="PayeeCode" type="xs:string" />
+	<xs:element name="CurrencyCode" type="xs:string" />
+	<xs:element name="Remarks" type="xs:string" />
+	<xs:element name="TxnId" type="xs:string" />
+	<xs:element name="MerchantID" type="xs:string" />
+	<xs:element name="SubMerchantID" type="xs:string" />
+	<xs:element name="TerminalID" type="xs:string" />
+	<xs:element name="TxnRefId" type="xs:string" />
+	<xs:element name="TimeStamp" type="xs:string" />
+</xs:schema>

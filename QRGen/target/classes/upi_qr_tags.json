@@ -1,0 +1,73 @@
+{
+  "url":"upi://pay?",
+  "qr_data": [
+    {
+      "tag": "url",
+      "json_mapping": "upiUrl",
+      "mendatory": true,
+      "default_value": "upi://pay?"
+    },
+    {
+      "tag": "pa",
+      "json_mapping": "vpa",
+      "mendatory": true,
+      "default_value": ""
+    },
+    {
+      "tag": "pn",
+      "json_mapping": "merchantName",
+      "mendatory": true,
+      "default_value": ""
+    },
+    {
+      "tag": "mc",
+      "json_mapping": "mcc",
+      "mendatory": false,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "tid",
+      "json_mapping": "tid",
+      "mendatory": false,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "tr",
+      "json_mapping": "tr",
+      "mendatory": true,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "tn",
+      "json_mapping": "tn",
+      "mendatory": false,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "am",
+      "json_mapping": "amount",
+      "mendatory": true,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "mam",
+      "json_mapping": "mam",
+      "mendatory": false,
+      "default_value": ""
+    }
+    ,
+    {
+      "tag": "cu",
+      "json_mapping": "cu",
+      "mendatory": false,
+      "default_value": "INR"
+
+    }
+    
+    ]
+}

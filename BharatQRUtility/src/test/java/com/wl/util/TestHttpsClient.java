@@ -1,0 +1,30 @@
+/*package com.wl.util;
+
+import java.util.HashMap;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class TestHttpsClient {
+
+	@Test
+	public void testSend() {
+		String url = "https://10.10.15.156/Instaapi/InstaOnBoard";
+		String requestId = "7136171531342575";
+			
+		String sealValue = "5da07289b09ae5114e4f6489beef2eed";
+		HashMap<String,String> headerMap = new HashMap<String,String>(4);
+		headerMap.put("RequestId", requestId);
+		headerMap.put("ClientId", "00031");
+		headerMap.put("SealValue", sealValue);
+		headerMap.put("Content-Type","application/x-www-form-urlencoded");
+		
+		String encData = "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";
+		
+		String responseJson = HttpsClient.send(url, encData, headerMap);
+		
+		Assert.assertNotNull(responseJson);
+	}
+
+}
+*/

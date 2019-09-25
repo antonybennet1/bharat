@@ -1,0 +1,296 @@
+{
+  "qr_data": [
+    {
+      "tag": "00",
+      "tag_length": "02",
+      "json_mapping": "paylodFormatIndicator",
+      "mendatory": true,
+      "default_value": "01",
+	  "child_tags" : null
+    },
+    {
+      "tag": "01",
+      "tag_length": "02",
+      "json_mapping": "pointOfInitiation",
+      "mendatory": true,
+      "default_value": "11",
+	  "child_tags" : null
+    },
+    {
+      "tag": "02",
+      "tag_length": "16",
+      "json_mapping": "visaMpan1",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "03",
+      "tag_length": "16",
+      "json_mapping": "visaMpan2",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "04",
+      "tag_length": "15",
+      "json_mapping": "masterMpan1",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "05",
+      "tag_length": "15",
+      "json_mapping": "masterMpan2",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "06",
+      "tag_length": "16",
+      "json_mapping": "rupayMpan1",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "07",
+      "tag_length": "16",
+      "json_mapping": "rupayMpan2",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "08",
+      "tag_length": "37",
+      "json_mapping": "ifscAccountNumber",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags" : null
+    },
+    {
+      "tag": "26",
+      "tag_length": "85",
+      "json_mapping": "upiVpa",
+      "mendatory": false,
+	  "default_value": null,
+      "child_tags": [
+        {
+          "tag": "00",
+          "tag_length": "10",
+          "json_mapping": "rupayRid",
+          "mendatory": true,
+          "default_value": "A000000524"
+        },
+        {
+          "tag": "01",
+          "tag_length": "50",
+          "json_mapping": "vpa",
+          "mendatory": false,
+          "default_value": null
+        }
+      ]
+    },
+    {
+      "tag": "27",
+      "tag_length": "83",
+      "json_mapping": "upiVpaRef",
+      "mendatory": false,
+	  "default_value": null,
+      "child_tags": [
+        {
+          "tag": "00",
+          "tag_length": "10",
+          "json_mapping": "rupayRid",
+          "mendatory": true,
+          "default_value": "A000000524"
+        },
+        {
+          "tag": "01",
+          "tag_length": "35",
+          "json_mapping": "tr",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "02",
+          "tag_length": "26",
+          "json_mapping": "upiUrl",
+          "default_value": null
+        }
+      ]
+    },
+    {
+      "tag": "28",
+      "tag_length": "30",
+      "json_mapping": "aadhar",
+      "mendatory": false,
+	  "default_value": null,
+      "child_tags": [
+        {
+          "tag": "00",
+          "tag_length": "10",
+          "json_mapping": "rupayRid",
+          "mendatory": true,
+          "default_value": "A000000524"
+        },
+        {
+          "tag": "01",
+          "tag_length": "12",
+          "json_mapping": "aadharNumber",
+          "mendatory": false,
+          "default_value": null
+        }
+      ]
+    },
+    {
+      "tag": "52",
+      "tag_length": "04",
+      "json_mapping": "mcc",
+      "mendatory": true,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "53",
+      "tag_length": "03",
+      "json_mapping": "currencyCode",
+      "mendatory": true,
+      "default_value": "356",
+	  "child_tags": null
+    },
+    {
+      "tag": "54",
+      "tag_length": "13",
+      "json_mapping": "amount",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "55",
+      "tag_length": "02",
+      "json_mapping": "tipConvIndicator",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "56",
+      "tag_length": "13",
+      "json_mapping": "convAmount",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "57",
+      "tag_length": "05",
+      "json_mapping": "convPer",
+      "mendatory": false,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "58",
+      "tag_length": "02",
+      "json_mapping": "countryCode",
+      "mendatory": true,
+      "default_value": "IN",
+	  "child_tags": null
+    },
+    {
+      "tag": "59",
+      "tag_length": "23",
+      "json_mapping": "merchantName",
+      "mendatory": true,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "60",
+      "tag_length": "15",
+      "json_mapping": "cityName",
+      "mendatory": true,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "61",
+      "tag_length": "10",
+      "json_mapping": "postalCode",
+      "mendatory": true,
+      "default_value": null,
+	  "child_tags": null
+    },
+    {
+      "tag": "62",
+      "tag_length": "99",
+      "json_mapping": "additionalDataField",
+      "mendatory": false,
+	  "default_value": null,
+      "child_tags": [
+        {
+          "tag": "01",
+          "tag_length": "26",
+          "json_mapping": "billNumber",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "02",
+          "tag_length": "26",
+          "json_mapping": "mobileNumber",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "03",
+          "tag_length": "26",
+          "json_mapping": " storeId",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "04",
+          "tag_length": "26",
+          "json_mapping": "loyaltyNumber",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "05",
+          "tag_length": "26",
+          "json_mapping": "referenceId",
+          "mendatory": true,
+          "default_value": null
+        },
+        {
+          "tag": "06",
+          "tag_length": "26",
+          "json_mapping": "consumerId",
+          "mendatory": false,
+          "default_value": null
+        },
+        {
+          "tag": "07",
+          "tag_length": "26",
+          "json_mapping": "terminalId",
+          "mendatory": true,
+          "default_value": null
+        },
+        {
+          "tag": "08",
+          "tag_length": "26",
+          "json_mapping": "purpose",
+          "mendatory": false,
+          "default_value": null
+        }
+      ]
+    }
+  ]
+}

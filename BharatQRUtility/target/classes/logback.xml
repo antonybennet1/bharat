@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>
+				 %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} [%line] - %msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+
+	<appender name="BHARATQR-APPLICATION"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.base}/logs/bharatqr-application.log</file>
+		<append>true</append>
+		<encoder>
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} [%line] - %msg%n
+			</Pattern>
+		</encoder>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${catalina.base}/logs/bharatqr-application.%d{yyyy-MM-dd}.%i.log.gz
+			</fileNamePattern>
+			<maxHistory>1</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy
+				class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>10MB</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+	</appender>
+	
+	<root level="ERROR">
+		<appender-ref ref="BHARATQR-APPLICATION" />
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<logger name="com.wl.bharatqr" level="DEBUG" />
+	<logger name="com.wl.instamer" level="DEBUG" />
+	<logger name="com.wl.util" level="DEBUG" />
+	<logger name="com.wl.upi" level="DEBUG" />
+	<logger name="com.wl.qr" level="DEBUG" />
+	<!-- <logger name="org.hibernate" level="ERROR" /> -->
+
+</configuration>

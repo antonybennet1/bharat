@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" targetNamespace="http://com/fss/upi"
+	xmlns:java="java:com.fss.upi.req" xmlns:upi="http://com/fss/upi">
+	<xs:import namespace="java:com.fss.upi.req" schemaLocation="java.xsd" />
+	<xs:element name="MerchantStatusUpdateReq">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="upi:req" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MerchantStatusUpdateResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="upi:return" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="req">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="java:OrgTxnId" />
+				<xs:element ref="java:ResCode" />
+				<xs:element ref="java:ResDesc" />
+				<xs:element ref="java:TxnType" />
+				<xs:element ref="java:OrgTxnRefId" />
+				<xs:element ref="java:OrgTxnTimeStamp" />
+				<xs:element ref="java:Amount" />
+				<xs:element ref="java:PayerVirAddr" />
+				<xs:element ref="java:PayeeVirAddr" />
+				<xs:element ref="java:PayeeMobileNumber" />
+				<xs:element ref="java:PayerCode" />
+				<xs:element ref="java:PayeeCode" />
+				<xs:element ref="java:CurrencyCode" />
+				<xs:element ref="java:Remarks" />
+				<xs:element ref="java:UPI" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="return">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="java:Resp" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
