@@ -13,7 +13,7 @@
 	<name>bharatqr</name>
 	<properties>
 		<jdk.version>1.7</jdk.version>
-		<spring.version>4.3.7.RELEASE</spring.version>
+		<spring.version>5.2.20.RELEASE</spring.version>
 		<jstl.version>1.2</jstl.version>
 		<junit.version>4.11</junit.version>
 		<logback.version>1.0.13</logback.version>
